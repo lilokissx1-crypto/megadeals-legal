@@ -1,49 +1,105 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MegaDeals24 – Top Amazon Angebote</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      text-align: center;
-      padding: 40px;
-      color: #333;
+    :root { --accent:#ff9900; --bg:#f7f7f7; --card:#fff; --text:#222; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, Arial, sans-serif; color:var(--text); background:var(--bg); }
+    header { padding:28px 16px; text-align:center; }
+    header h1 { margin:0 0 8px; font-size:28px; }
+    header p { margin:0; color:#555; }
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap:16px;
+      padding: 0 16px 28px;
+      max-width: 1100px;
+      margin: 0 auto;
     }
-    h1 { color: #222; }
-    .deal {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin: 20px auto;
-      padding: 20px;
-      width: 90%;
-      max-width: 400px;
+    .card {
+      background:var(--card);
+      border-radius:14px;
+      padding:16px;
+      box-shadow:0 6px 20px rgba(0,0,0,.06);
+      display:flex; flex-direction:column; align-items:center; text-align:center;
     }
-    a {
-      display: inline-block;
-      background: #ff9900;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
+    .image {
+      width:100%; max-width:260px; aspect-ratio:1.1/1; border-radius:10px;
+      background:#eee center/cover no-repeat; margin-bottom:12px;
     }
-    a:hover { background: #e68a00; }
+    .title { font-weight:700; margin:4px 0 6px; }
+    .desc { color:#555; font-size:14px; margin:0 0 12px; }
+    .btn {
+      display:inline-block; padding:12px 16px; border-radius:10px;
+      background:var(--accent); color:#fff; text-decoration:none; font-weight:700;
+      transition:transform .05s ease-in-out, filter .2s;
+    }
+    .btn:hover { filter:brightness(.95); transform:translateY(-1px); }
+    footer { text-align:center; padding:24px 12px; color:#666; font-size:14px; }
+    footer a { color:#444; }
   </style>
 </head>
 <body>
-  <h1>🔥 MegaDeals24 – Unsere besten Amazon-Angebote 🔥</h1>
-  
-  <div class="deal">
-    <h2>💾 SanDisk Ultra 128 GB microSD-Karte</h2>
-    <p>Perfekt für Smartphones & Kameras – schnell, zuverlässig und günstig.</p>
-    <a href="https://amzn.to/4qUnffp" target="_blank" rel="nofollow">➡️ Jetzt ansehen</a>
-  </div>
+  <header>
+    <h1>🔥 MegaDeals24 – Unsere besten Amazon-Angebote 🔥</h1>
+    <p>Anzeige/Affiliate – Bei Kauf über unsere Links erhalten wir eine Provision (für dich ohne Mehrkosten).</p>
+  </header>
 
-  <p style="margin-top:40px;">© 2025 MegaDeals24 – Alle Amazon-Links sind Affiliate-Links.</p>
+  <main class="grid">
+    <!-- PRODUKT 1 -->
+    <article class="card">
+      <div class="image" style="background-image:url('');"></div>
+      <div class="title">💾 SanDisk Ultra 128 GB microSD</div>
+      <p class="desc">Mehr Speicher für Handy/Kamera – schnell, zuverlässig, top Preis.</p>
+      <a class="btn" href="https://amzn.to/4qUnffp" target="_blank" rel="nofollow noopener">➡️ Jetzt ansehen</a>
+    </article>
+
+    <!-- PRODUKT 2 -->
+    <article class="card">
+      <div class="image" style="background-image:url('');"></div>
+      <div class="title">🎧 Kopfhörer</div>
+      <p class="desc">Klarer Sound & starke Bässe – ideal für Musik & Videos.</p>
+      <a class="btn" href="https://amzn.to/49QGdO3" target="_blank" rel="nofollow noopener">➡️ Jetzt ansehen</a>
+    </article>
+
+    <!-- PRODUKT 3 -->
+    <article class="card">
+      <div class="image" style="background-image:url('');"></div>
+      <div class="title">🔋 Powerbank</div>
+      <p class="desc">Lädt dein Handy unterwegs mehrfach – kompakt & leicht.</p>
+      <a class="btn" href="https://amzn.to/49haB42" target="_blank" rel="nofollow noopener">➡️ Jetzt ansehen</a>
+    </article>
+
+    <!-- PRODUKT 4 -->
+    <article class="card">
+      <div class="image" style="background-image:url('');"></div>
+      <div class="title">⌚ Smartwatch</div>
+      <p class="desc">Sporttracking, Herzfrequenz & lange Akkulaufzeit.</p>
+      <a class="btn" href="https://amzn.to/4ig6uYx" target="_blank" rel="nofollow noopener">➡️ Jetzt ansehen</a>
+    </article>
+
+    <!-- PRODUKT 5 -->
+    <article class="card">
+      <div class="image" style="background-image:url('');"></div>
+      <div class="title">🖱️ Funkmaus</div>
+      <p class="desc">Leise Klicks, präzise Steuerung – perfekt fürs Büro.</p>
+      <a class="btn" href="https://amzn.to/4oDiAxd" target="_blank" rel="nofollow noopener">➡️ Jetzt ansehen</a>
+    </article>
+
+    <!-- PRODUKT 6 -->
+    <article class="card">
+      <div class="image" style="background-image:url('');"></div>
+      <div class="title">🔌 USB-C Kabel</div>
+      <p class="desc">Schnelles Laden & Datenübertragung – robust & langlebig.</p>
+      <a class="btn" href="https://amzn.to/3LWLMk0" target="_blank" rel="nofollow noopener">➡️ Jetzt ansehen</a>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 MegaDeals24 · <a href="./datenschutz.html">Datenschutz</a> · <a href="./nutzungsbedingungen.html">Nutzungsbedingungen</a></p>
+  </footer>
 </body>
 </html>
